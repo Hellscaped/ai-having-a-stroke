@@ -1,0 +1,189 @@
+"""
+ How to code in Python
+ For Kindergarteners
+ By OpenAI Codex (thats me!)
+ """
+ # First we will initalize a variable that tells our computer what to say
+text_to_write = """
+ Hello World!
+ Welcome to 3D programming with Python Elementary! 
+ Today we will learn how to program in python!
+ Let's start off with something simple!
+ """
+#type the above line as you type this
+#variables contain objects inside of them
+#They are aptly named because they contain a value
+#type: print(text_to_write) this will output what is stored in text_to_write
+print(text_to_write)
+
+#wow amazing isn't it?
+#if it isn't amazing, whatever
+#give me money for programming in Python for you
+#LET'S GET STARTED #################
+#LET'S GET STARTED #################
+#LET'S GET STARTED #################
+#LET'S GET STARTED #################
+
+#Keywords and Thinking in Blue, Bold and Red
+#Whenever you see the word PRINT in my code, that's a keyword!
+#it has a specific purpose in Python, which is behind every block
+#those blocks are usually blue, bold and red
+#they structure data on a low, but mandatory level
+#remember them by the color of the 100's of dollars these skills usually fetch
+#PRINT
+#PRINT!!!!!!!!!!!!!!!!!
+print("money back guarantee, enter save code: 129aa1sk")
+
+#Let's program a bible now!
+#type in: print("hello world!", end="\n\n")
+#what does this do?
+#PRINT is a function, put that smack dab in the middle of your line
+#which means the line gets translated by the python computer!
+#functions are words at the end of the sentence though
+#to finish a command in python, you have to have a ! the second time
+#otherwise the interpreter will go "cmon type a proper command
+#"PRINT" functions need whitespace after them, so end it with two tabs
+#all operations you do with python need specific whitespace around parges
+#parges are the () boxes after your print function
+print("hello world!", end="\n\n")
+
+#"""HALAOAKLAALAYALA HALLOOO HALALAOAAHALOOA FEEEEEEEEEEEEEEEEEEEEEEEEEETTTSHAHOOOOOOOAO-O-A-A A-0-Z-A - 
+#LSKEEEELKELA A++++-LK-KA-AK-SOEE-OA   -OF %$#@^&&*#(%#$)(_)(*(%$?><?""?>< 
+#LABELS/LABELS/LABELS/LABELS/LABELS/LABELS/LABELS/LABELS/LABELS/LABELS/LABELS/LABELS/LABELS
+#LOADS OF LABELS GET CREATED FOR THE SAKE OF *YOUR* *BRAIN!* *MINE TOO!*
+#OKAY! <- 4 day ago
+
+#let's recap things
+#print("this will print onto the screen for other people to see")
+#this is all the function PRINT does!
+#so let's make some more complex code!!!!!!!!
+#type X = "This is what goes inside the x variable" do not put a question mark!
+#X MUST EQUAL something, so we use a "=" sign and then YOUR INPUT
+#what goes inside the bracket of the x variable (thing)? 
+#called a STRING :: computer name for text
+print("This is what goes inside the x variable")
+
+#AND NOW WE ARE GOING TO MAKE A TRUE RELATIONSHIP!
+x = "This is what goes inside the x variable"
+print(x)
+#does it work???
+#if it doesn't work, there is one problem in general
+#if it shows this ERROR instead of your x MESSAGE
+#this is called a *terminal error or an *runtime error"* in computer jargon
+#it means there is a syntax error...
+#made so the programmer can find something in their code that is incorrect
+#or missing something, in the case 'better luck next time and restart'
+
+#Great! Let's go forward into first topic(in a bit)
+#Variables & Datatypes!
+#We've seen a string above!
+#basically any text you type into a program 
+#and print to the screen is a string
+#because its how a computer *stores* text input in memory
+#understand?
+
+#now for something a little bit more complicated!!!
+#type...
+#num1 = 20
+#num2 = 2
+#print(num1 + num2)
+#prints number 22
+num1 = 20
+num2 = 2
+print(num1 + num2)
+#run through it again, understand what is happening
+#first number variable gets initalized, and the numbers variable sent to it
+#like tossing numbers into a variable for good safety!
+#now for print!
+#anything between ()'s will be printed onto the terminal, like a sticker!
+#or another computer is metaphorically speaking
+#the computer always says!
+#okay, add up num1 of 20 and num2 of 2 and print result
+#num1 and num2 are references to 20 and 2,
+#they replaced anything with the word num1 or num2
+#inside the brackets to the real numbers!
+#now for another more complicated version of this! 
+#type: num3 = input("type something")
+#print(num1 ** num3)
+num3 = input("type something")
+print(num1 ** num3)
+
+#we did a combination of old print(num1)
+#and some functionality of the computer terminal
+#called an operating system level functionality, IOSLP
+#it basically has a prompt that asks to "type something"
+#then transfers it to num3 where it will be saved forever
+#and the only real requirement of a computer...
+#it needs to remember the value of num3
+#can it?
+#it doesn't really on a physical level, only a digital one...
+#stores num3 as a hash or permanantly generated password inside memory
+#because it is storing EVERYTHING
+#as it is on a *limited memory memory*
+#but releasing just enough to do the above request...
+#funcion of num3 is called like an array, not a string
+#we can make num4 = num3, its thus getting a new name
+#they are the same thing in memory
+num4 = num3
+print(num4)
+#can you guess now what happens in the above!?!
+#can you?
+#why does it happen? 
+#can you make my life better?
+#This is pretty much the whole idea behind computer programming
+#there are always questions, if you find more ask a friend
+#the basic idea is called *working with objects*
+#which are stored inside the *MEMORY MEMORY*
+#and *there are only two ways* a computer will do things...
+#1 to work with its memory and 2 to work with the user!
+#that's the basic idea behind computer terminology AND CODE
+#replacing something stored in memory by another personal input!!!
+
+#more things to keep the cogs turning...
+#everything is PUT INTO MEMORY,
+#everything is TAKEN OUT FROM MEMORY which only lives for a *limited time*
+#THEN IT DISAPPEARS
+#thats what memory is, the act of storing something in a box for a *limited time*
+#THEN IT IS DISPOSED!
+#Never lost in memory, but does when a next process runs
+#BUT YOU CAN ALWAYS RELOAD IT INTO MEMORY
+#WHEN NNECESSARY FOR A SPECIFIC JOB IN THE CODE/FIELDS
+#DO YOU UNDERSTAND, CHILD?^
+#TYPE OUT THE ABOVE, IT IS MY TEACHING STYLE FOR HUMANS!
+#              ^^                    
+#CONSTANT CAPITAL LETTERS, like: WANT TO DO SOMETHING? - YES? !...
+#question mark means *get ready for something possible*
+#exclamation mark there usually means *(good job that happened, let's go to the next thing!)*
+#ILLUSTRATE SCENARIO: type: x = y *^^*
+#in code, only . <https://docs.python.org/3/tutorial/introduction.html><30>
+y = 2
+z = 2
+print(y + z)
+
+#hether y = 2 or y = "hello text", the computer calls it an object
+#so it will be printed to the screen whenever a print is given the object to call 
+#and print(x,y,z) prints x, y, and z all in a row! 
+#on each others side and then using three new line signals!
+#MORE INFORMATION ######
+#MORE INFORMATION ######
+#MORE INFORMATION ######
+#MORE INFORMATION ######
+x = "money"
+y = 69
+z = 200
+zz = x * abs(y) + z
+print(zz)
+#more information about abs function function
+abs(100.1)
+abs(100.0 - 100.1)
+#pow(x, y)
+#returns x to the power y
+#pow(2,3)
+print(pow(2,3))
+
+
+#for maximum of from a 0-100 dollar budget...######
+#for maximum of from a 0-100 dollar budget...######
+# nevermind
+# I'm gonging to wrap thigs up from her
+# and fix my life
