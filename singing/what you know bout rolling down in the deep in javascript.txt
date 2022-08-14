@@ -1,0 +1,87 @@
+// whatcha know bout rolling down in the deep in javascript
++
++var input = 'I am middle class, easy access to green means and harder access to crack rocks. I cannot wait till I truly no longer have anything to do with either';
++
++// remder each input char to dom el
++var chars = input.split('');
++for(var i = 0; i < chars.length; i++) {
++    var s = document.createElement('span');
++    s.textContent = chars[i];
++    s.style = 'color: rgba(127,127,127,0);';
++}
++
++var now = 0;
++var nowTime = 0;
++var frameTime = 50;
++var frameTimeUp = frameTime;
++
++var preSay = null;
++var say = null;
++var postSay = null;
++
++function setSay() {
++    preSay = document.querySelectorAll('pre')[now];
++    say = preSay.querySelector('strong');
++    postSay = say.nextElementSibling;
++
++    preSay.style = 'background: rgba(127, 127, 127, 0.04);';
++
++    now++;
++}
++
++function setReciever() {
++    say.setAttribute("id", "say");
++}
++
++setSay();
++setReciever();
++
++function rend() {
++    if (preSay.nextElementSibling == null)
++    {
++        document.getElementById("say").remove();
++        preSay.removeAttribute("style");
++        loveYou();
++        return;
++    }
++    var nowSay = say.textContent.split('');
++    var nowPost = postSay.textContent.split('');
++
++    for(let i = 0; i < nowSay.length; i++)
++    {
++        var spanNow = document.createElement('span');
++        spanNow.innerHTML = nowSay[i];
++        spanNow.style = 'color: rgba(127,127,127,0);';
++        // spanNow.style = 'color: rgba(255,64,64,0.2);';
++
++        var rest = postSay.textContent.substring(0, i);
++        var spanAfter = document.createElement('span');
++        spanAfter.innerHTML = rest;
++        spanAfter.style = 'color: rgba(127,127,127,' + (1 - i/nowSay.length) + ');';
++        say.parentNode.insertBefore(spanNow, say);
++        // say.parentNode.insertBefore(spanAfter, say.nextElementSibling);
++
++        say.remove();
++
++        say = document.getElementById("say");
++        say.setAttribute("id", 'say' + i);
++        // say.removeAttribute("id");
++    }
++    document.getElementById("say" + (nowSay.length - 1)).remove();
++
++    setSay();
++    setReciever();
++}
++
++function loveYou() {
++ console.log("nobody loves you");
++}
++
++setInterval(function () {
++    frameTimeUp--;
++    if (frameTimeUp < 0)
++    {
++        rend();
++        frameTimeUp = frameTime;
++    }
++}, 1);
