@@ -1,0 +1,413 @@
+/*
+ How to code in Javascript
+ For Kindergarteners
+ By OpenAI Codex (thats me!)
+*/
+
+
+
+
+//Quick Note: Everything inside of these // // are comments! Just carefully ignore them! or your program wont work!
+//In any coding situation, you can use what's called a "console" to test your code! Lets get to coding!
+
+//Javascript lts you do a ton of things, but for now, lets just make it say something!
+
+//This is call a "Print" command
+
+console.log("I can learn to code!");
+
+//This does many things! "console" means it is a terminal command, and the other two are touching words! Just try it out, add anything after the "chat" marks and save you file, then open up your file in a browser. It works!
+
+//Everything from here on is always in a big line of text. Each line is separated by a ";". You cannot have a programming error when you dont use a ";" to end a line.
+
+//Lets try another! Try this command to have the system wait 1 second before moving on. You can try any number!
+
+setTimeout(alert("1"), 1000);
+
+//Its not to hard is it? Well, now, lets try a few loops. Loops are commands that you can use to repeat or use over again. Look carefully and you can see they have "{" "}"! anything between those symbols happens over and and over again, until the computer says not to. Just like having a kid do push ups!
+
+$(function() {
+  var h1s = $('h1')
+  
+    [0, 1, 2].forEach(function(i) {
+     h1s[i].innerHTML = h1s[i].innerHTML + '!!!';
+   });
+  h1s.slideUp().fadeIn();
+});
+
+//Lets try another, can the computer repeat itself over and over again? Yes, yes it can! Lets tweak the loopp command above to be a little different.
+
+//REMOVE ' Alert("1");' and replace it with this. You should see dots dissapear and then come back. Repeat or old code if you like!
+
+setInterval(
+        function man() {
+            // do some stuff
+          if ($('#girl').is(":hidden")) {
+            $('#girl').slideDown();//animating the ellipses div
+          } else {
+            $('#girl').slideUp();
+          }
+        },500
+); //this funciton will execute every 500 milliseconds.
+
+//Lets make the computer do a little math! The operators we use are "add","subtract", "multiply" and "divide". We use "+ - * / symbols to make the computer do something! 
+
+var statementToChange, startTime, endTime, maxTime;
+
+//When you add theses to numbers, use the correct " + " or " - " or something, dont do this. There is not Spaceship math!
+
+//1. Change the code so that "yourName" is set to  your name
+var yourName = "Jamie";
+//2. Add 50 + 500 + 4234923 + 987 and set that value to numberOfChickens. You can also add strings!
+var numberOfChickens = "Grace";
+//3. Create another String of a sentence and add the numberOfChickens variable and yourName variable to it. Set that variable to yourSentence.
+var yourSentence = "This is the sentence I am changing";
+
+// jQuery on the page! We don't need the document ready function to see the effect below.
+$(function () {
+
+	//After the html page is loaded, we want to hook into the <h2> that appears
+  yourChangedSentence = $('h2');
+
+  // We'll display the short text first
+  statementToChange = "Your name is " + yourName + " and you have " + numberOfChickens + " hundred chickens! " + yourSentence.substr(0,20);
+
+  // Fire off a hock to the dom. The html of our <h2> will change to the below
+  yourChangedSentence.html(statementToChange);
+
+  // Assert that the max time is 300 milliseconds (.3 seconds)
+  maxTime = 300;
+
+  // Assert that the start time is the current time as soon as we load our html element.
+  startTime = new Date().getTime();
+  endTime = startTime;
+
+  // Infinite loop! This is the law of the app. We will execute at nearl maximum posssible time
+  // Since endtime - starttime *= milliseconds, the loop will execute 300 milliseconds after the start time
+  while (endTime - startTime <= maxTime) {
+    // End time is now the current time
+    endTime = new Date().getTime();
+  }
+
+  // Now beyond 300 sec. let's print the full sentence. we'll hook into the <h2> again
+  // javascript does not need to retake the html value of the <h2>, it will always be ther for reuse
+  yourChangedSentence.html("Your name is " + yourName + " and you have " + numberOfChickens + " one hundred chickens! " + yourSentence);
+
+});
+
+// What we just did was print a sentence where the variable data is dynamically added so that it prints. This is one of the powerfull things of using a programming language. The browser knows what variable is a variable by the syntax "$", so calling $(yourVariable) directly references that variable and then adding ".html(" ")" means to print a value inside a line of code.
+
+//You can also save this code down below by guessing the answers. Use var to define a variable. can you make the code say you have 94220 dollars? the files are already loaded in the web page, you don't need to create any dom yet! try it!
+
+var todaysTotalExpenses, beginningOfDay, heightOfBusToJump, myShoeSize;
+
+  // Now beyond 300 sec. let's print the full sentence. we'll hook into the <h2> again
+  // javascript does not need to retake the html value of the <h2>, it will always be ther for reuse
+  $(function() {
+
+  yourChangedSentence = $('h2');
+
+  todaysTotalExpenses =  yourChangedSentence.html("Todays total expenses were: "+ todaysTotalExpenses + "! Over 9000! " + myShoeSize).fadeIn();
+
+  // Assert that the max time is 300 milliseconds (.3 seconds)
+  // Default is .5
+  maxTime = .7;
+
+  // Assert that the start time is the current time as soon as we load our html element.
+  startTime = new Date().getTime();
+  endTime = startTime;
+
+  // Infinite loop! This is the law of the app. We will execute at nearl maximum posssible time
+  // Since endtime - starttime *= milliseconds, the loop will execute 300 milliseconds after the start time
+  while (endTime - startTime <= maxTime) {
+    // End time is now the current time
+    endTime = new Date().getTime();
+  }
+
+  // Fire off a hock to the dom. The html of our <h2> will change to the below
+  yourChangedSentence.fadeOut(1000);
+
+});
+
+    // We'll use a method provided by jQuery (http://api.jquery.com/fadeIn/).
+    $(function() {
+      $('yourChangedSentence').fadeIn();
+    });
+
+
+// Now beneath 300 sec. let's modify the full sentence and use a loop over and over again until the bell of the day comes. Setting the sentences to not execute outside of that time is our duty. We must make them see the new world to ajax land.
+//for any loops, use "for (var i = 0;i<=1000;i++) { something to run for every pass of i! }"
+
+
+
+// Can we help people to get glasses? you can try it, but we dont have the graphics to do it. all you have to do is load the correct, correct graphics and rename the files. We still need your help to write a program to do the job! Can we do it, together?
+
+$(function() {
+
+    do {
+        var userName = prompt("Please enter your name, username:");
+    } while (userName == null || userName == "");
+
+    var userResponse;
+    
+    do {
+        userResponse = prompt("Would this person like glasses, yes/no:")
+    } while (userResponse.toLowerCase() != "yes" && userResponse.toLowerCase() != "no");
+    getGlasses(userResponse.toLowerCase());
+    function getGlasses(userResponse) {
+     
+        $(document).ready(function() {
+            if(userResponse == 'yes') {
+                $('#einstien').fadeOut("slow");
+              
+              // Code here to load vision now!
+            }
+        });
+
+      
+    } 
+
+});
+
+
+
+
+//Let do something really fun! lets make our lass go places! But first, we need to make her appear! Wait! We don't have the code for that? Make your class then do this! Its what makes the class appear and capture the kids attention!
+
+$(function() {
+  $(".explode").hide().show("slow");
+});
+
+//Hmmm... How does she move around?
+
+ $(function () {
+  $(".explode").hide().effect("explode", {pieces: 16}, 1500);
+});
+
+//Can we do something totally amazing to the class? Make other people love the class even more?
+
+//$(function () {
+  // allow2 = true;
+  // $(function() {
+  //   $(".unicornCannon").mousedown(function(event) {
+  //     if (allow2) {
+  //       allow2 = false;
+      
+  //       // choose firing coordinates
+  //       offsetX = -60; 
+  //       sourceTop = $("body").scrollTop() + 85;
+  //       offsetY = 0; 
+  
+  //       // position the target
+  //       $("#Target").css("left", offsetX + "px");
+  //       $("#Target").css("top", sourceTop + offsetY + "px");
+      
+  //       // fireball!
+  //       $("#Fire").css("left", offsetX + 50 + "px");
+  //       $("#Fire").css("top", sourceTop + "px");
+  //       $("#Fire").css("visibility", "visible").fadeOut(1200);
+      
+  //       //§("#Bullet").css("left", sourceLeft + "px");
+  //       $("#Bullet").css("top", sourceTop + "px");
+  //       //$("#Bullet").css("visibility", "visible");
+  //       $("#Bullet").css("visibility", "hidden");
+  //       $("#Bullet").css("top", sourceTop  + "px");
+  
+  //        // move rocket!
+  //        $("#Bullet").css("left", $(window).width()  + "px");
+  //        $("#Bullet").css("visibility", "visible");
+  //       $("#Bullet").animate(
+  //         { left: 0 + offsetX, top: 0 + offsetY },
+  //         {
+  //           duration: 2700,
+  //           specialEasing: {
+  //             left: 'linear',
+  //             top: 'easeInQuad'
+  //           },
+  //           complete: function() {
+  //             allow2 = true;
+  //             $("#Bullet").css("left", -200 + offsetX + "px");
+  //             $("#Bullet").css("visibility", "hidden");
+  //           }
+  //         }
+  //       );
+  //      }
+  //   });
+  // });
+//});
+       
+//-----------------------------
+//!SECTION
+//-----------------------------
+// Program to Tweet from this page to twitter. In the future we can have people tweet to each other with a reservation system.
+//-----------------------------
+// Function that displays a modal box when you click on the bread
+//-----------------------------
+function click_function() {
+// hide the modal as soon as it opens
+  $("#alert").hide();
+  var a = <?php echo json_encode($return_sd);?>
+  //alert(a);
+  // show the modal
+  $("#alert").fadeIn(1000);
+  htmlvar = '<div class=\"Starbucks\">' + '<img border=\"0\" alt=\"Starbucks\" src=\"https://www.gettable.io/themes/default/images/starbucks-1514852858.png\" width=\"60\" height=\"60\">' + '<h3>' + a[0].name + '</h3>' + '<p>' + parseFloat(a[0].distance * 0.000621371).toFixed(2) + ' miles away.</p>' + '<p>' + a[0].address + '</p>' + '<p>' + a[0].phone + '</p>' + '<p>' + a[0].restaurant_id + '</p>' + '<button>Visit</button>' + '</div>';
+  document.getElementById("space").innerHTML = htmlvar;
+}             	
+//-----------------------------
+// This function takes the modal and removes it, re-displaying the store finder screen
+//-----------------------------
+$(document).ready(
+  function() {
+    // When the button with an id of close is clicked
+    $('#done').click(
+      function() {
+      // hide the modal box
+      $('#alert').fadeOut(1000)
+    });
+    // When the background is clicked, do the same as above
+    $('#alert').click(
+      function() {
+      $('#alert').fadeOut(1000)
+    });
+    // When the store finder logo is clicked, and we want to start over, do the same
+    $('#chicken').hide().click(
+      function() {
+        $('#alert').fadeOut(1000)
+    });
+    $('#dog').hide().click(
+      function() {
+        $('#alert').fadeOut(1000)
+    });
+    $('#bear').hide().click(
+      function() {
+        $('#alert').fadeOut(1000)
+    });
+    $('#explode').hide().click(
+      function() {
+        $('#alert').fadeOut(1000)
+    });
+    $('#explodetwo').hide().click(
+      function() {
+        $('#alert').fadeOut(1000)
+    });
+    $('#explodethree').hide().click(
+      function() {
+        $('#alert').fadeOut(1000)
+    });
+    $('#explodefour').hide().click(
+      function() {
+        $('#alert').fadeOut(1000)
+    });
+    $('#explodefive').hide().click(
+      function() {
+        $('#alert').fadeOut(1000)
+    });
+    $('#explodesix').hide().click(
+      function() {
+        $('#alert').fadeOut(1000)
+    });
+    $('#explodeseven').hide().click(
+      function() {
+        $('#alert').fadeOut(1000)
+    });
+    $('#explodeeight').hide().click(
+      function() {
+        $('#alert').fadeOut(1000)
+    });
+});
+
+
+// turn all of this into a loop
+// array of string arrays; all of the names/directions
+function unicornCannon(direction, className) {
+ // Allow for multithreading
+ allow2  = true;
+ $(function() {
+   // $(.unicornCannon).mousedown(function(event) {
+   $('#explode').mousedown(function(event) {
+     // disallow
+     if (allow2) {
+      allow2  = false;
+      // choose firing coordinates
+      offsetX = -60; //space = none
+      sourceTop = -500;//$("body").scrollTop() + 400;
+      offsetY = 0; //$("body").scrollLeft() + 0;
+      // position the target
+      // $("#Target").css("left", offsetX  + "px");
+      // $("#Target").css("top", sourceTop  + offsetY + "px");
+      
+      // fireball!
+      $("#Fire").css("left", offsetX  + 50 + "px");
+      $("#Fire").css("top", sourceTop  + "px");
+      $("#Fire").css("visibility", "visible").fadeOut(1200);
+      
+      // $("#Bullet").css("left", sourceLeft  + "px");
+      $("#explode").css("left", - 250 + offsetX + "px");
+      $("#explode").css("top", sourceTop  + "px");
+      $("#explode").css("visibility", "visible");
+
+      // cannonball!
+      switch(direction) {
+        // top right
+        case 0:
+// $("#explode").animate(
+//               { left: $(window).width()/2 + offsetX, top: 0 + offsetY },
+//               {
+//                 duration: 2000,
+//                 specialEasing: {
+//                   left: 'linear',
+//                   top: 'easeInQuad'
+//                   },
+//                 complete: function() 
+//                 {
+//                   allow2  = true;
+//                   //$("#explode").css("left", - 200 + offsetX + "px");
+//                   $("#explode").css("visibility", "hidden");
+//                 }
+//               }
+//               );
+// TODO: find a way to set time with $variable. Different function firing
+        setTimeout (
+          function() {
+            $("#explode").css("left", $(window).width()/2 + offsetX + "px")},
+        1000)
+        break;
+        // topright
+        case 1:
+        $("#explode").animate(
+                { left: $(window).width()/8 + offsetX, top: 0 + offsetY },
+                {
+                  duration: 2000,
+                  specialEasing: {
+                    left: 'linear',
+                    top: 'easeInQuad'
+                    },
+                  complete: function() {
+                    allow2  = true;
+                    //$("#explode").css("left", - 200 + offsetX + "px");
+                    $("#explode").css("visibility", "hidden");
+                  }
+                }
+                );
+        break;
+        // right
+        case 2:
+        $("#explode").animate(
+                { left: $(window).width() - offsetX, top: $(window).height()/2 + offsetY },
+                {
+                  duration: 2000,
+                  specialEasing: {
+                    left: 'linear',
+                    top: 'easeInQuad'
+                    },
+                  complete: function() {
+                    allow2  = true;
+                    //$("#explode").css("left", - 200 + offsetX + "px");
+                    $("#explode").css("visibility", "hidden");
+                  }
+                }
+                );
+        break;
+        // bottom right
+        case 3:
+        $("#
